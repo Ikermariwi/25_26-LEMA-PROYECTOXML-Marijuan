@@ -8,7 +8,7 @@
         <html>
             <head>
                 <title>Configurador de Ordenadores</title>
-                <link rel="stylesheet" href="../estilos/catalogo.css" />
+                <link rel="stylesheet" href="../estilos/css.css" />
             </head>
 
             <body>

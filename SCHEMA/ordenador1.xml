@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ordenador xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:noNamespaceSchemaLocation="ordenador1.xsd"
-           moneda="EUR"
-           gama="alta">
+<ordenador xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ordenador1.xsd" moneda="EUR" gama="alta">
 
     <MAC>23:23:23:23:23</MAC>
 
