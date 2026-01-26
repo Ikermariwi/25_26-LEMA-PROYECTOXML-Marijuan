@@ -51,23 +51,18 @@
                                     </figure>
                                     <p>Precio: <strong><xsl:value-of select="precio" />€</strong></p>
                                     <p>Precio sin IVA: <xsl:value-of
-                                            select="format-number(number(precio) div 1.21, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) div 1.21, '#0.00')" />€</p>
 
                                     <p>Precio con IVA: <xsl:value-of
-                                            select="format-number(number(precio) * 1.21, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) * 1.21, '#0.00')" />€</p>
 
                                     <p>Descuento 10%: <xsl:value-of
-                                            select="format-number(number(precio) * 0.9, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) * 0.9, '#0.00')" />€</p>
 
-                                    <!-- AÑADIDO: if -->
                                     <xsl:if test="number(precio) &gt; 200">
                                         <p class="oferta">¡Este producto supera los 200€!</p>
                                     </xsl:if>
 
-                                    <!-- AÑADIDO: choose -->
                                     <xsl:choose>
                                         <xsl:when test="@gama='alta'">
                                             <p class="gama">Gama alta</p>
@@ -108,23 +103,18 @@
                                     </figure>
                                     <p>Precio: <strong><xsl:value-of select="precio" />€</strong></p>
                                     <p>Precio sin IVA: <xsl:value-of
-                                            select="format-number(number(precio) div 1.21, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) div 1.21, '#0.00')" />€</p>
 
                                     <p>Precio con IVA: <xsl:value-of
-                                            select="format-number(number(precio) * 1.21, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) * 1.21, '#0.00')" />€</p>
 
                                     <p>Descuento 10%: <xsl:value-of
-                                            select="format-number(number(precio) * 0.9, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) * 0.9, '#0.00')" />€</p>
 
-                                    <!-- if -->
                                     <xsl:if test="number(precio) &gt; 200">
                                         <p class="oferta">¡Este producto supera los 200€!</p>
                                     </xsl:if>
 
-                                    <!-- choose -->
                                     <xsl:choose>
                                         <xsl:when test="@gama='alta'">
                                             <p class="gama">Gama alta</p>
@@ -165,16 +155,13 @@
                                     </figure>
                                     <p>Precio: <strong><xsl:value-of select="precio" />€</strong></p>
                                     <p>Precio sin IVA: <xsl:value-of
-                                            select="format-number(number(precio) div 1.21, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) div 1.21, '#0.00')" />€</p>
 
                                     <p>Precio con IVA: <xsl:value-of
-                                            select="format-number(number(precio) * 1.21, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) * 1.21, '#0.00')" />€</p>
 
                                     <p>Descuento 10%: <xsl:value-of
-                                            select="format-number(number(precio) * 0.9, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) * 0.9, '#0.00')" />€</p>
 
                                     <xsl:if test="number(precio) &gt; 200">
                                         <p class="oferta">¡Este producto supera los 200€!</p>
@@ -219,16 +206,13 @@
                                     </figure>
                                     <p>Precio: <strong><xsl:value-of select="precio" />€</strong></p>
                                     <p>Precio sin IVA: <xsl:value-of
-                                            select="format-number(number(precio) div 1.21, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) div 1.21, '#0.00')" />€</p>
 
                                     <p>Precio con IVA: <xsl:value-of
-                                            select="format-number(number(precio) * 1.21, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) * 1.21, '#0.00')" />€</p>
 
                                     <p>Descuento 10%: <xsl:value-of
-                                            select="format-number(number(precio) * 0.9, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) * 0.9, '#0.00')" />€</p>
 
                                     <xsl:if test="number(precio) &gt; 200">
                                         <p class="oferta">¡Este producto supera los 200€!</p>
@@ -275,16 +259,13 @@
                                     </figure>
                                     <p>Precio: <strong><xsl:value-of select="precio" />€</strong></p>
                                     <p>Precio sin IVA: <xsl:value-of
-                                            select="format-number(number(precio) div 1.21, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) div 1.21, '#0.00')" />€</p>
 
                                     <p>Precio con IVA: <xsl:value-of
-                                            select="format-number(number(precio) * 1.21, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) * 1.21, '#0.00')" />€</p>
 
                                     <p>Descuento 10%: <xsl:value-of
-                                            select="format-number(number(precio) * 0.9, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) * 0.9, '#0.00')" />€</p>
 
                                     <xsl:if test="number(precio) &gt; 200">
                                         <p class="oferta">¡Este producto supera los 200€!</p>
@@ -331,16 +312,13 @@
                                     </figure>
                                     <p>Precio: <strong><xsl:value-of select="precio" />€</strong></p>
                                     <p>Precio sin IVA: <xsl:value-of
-                                            select="format-number(number(precio) div 1.21, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) div 1.21, '#0.00')" />€</p>
 
                                     <p>Precio con IVA: <xsl:value-of
-                                            select="format-number(number(precio) * 1.21, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) * 1.21, '#0.00')" />€</p>
 
                                     <p>Descuento 10%: <xsl:value-of
-                                            select="format-number(number(precio) * 0.9, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) * 0.9, '#0.00')" />€</p>
 
                                     <xsl:if test="number(precio) &gt; 200">
                                         <p class="oferta">¡Este producto supera los 200€!</p>
@@ -386,16 +364,13 @@
                                     </figure>
                                     <p>Precio: <strong><xsl:value-of select="precio" />€</strong></p>
                                     <p>Precio sin IVA: <xsl:value-of
-                                            select="format-number(number(precio) div 1.21, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) div 1.21, '#0.00')" />€</p>
 
                                     <p>Precio con IVA: <xsl:value-of
-                                            select="format-number(number(precio) * 1.21, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) * 1.21, '#0.00')" />€</p>
 
                                     <p>Descuento 10%: <xsl:value-of
-                                            select="format-number(number(precio) * 0.9, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) * 0.9, '#0.00')" />€</p>
 
                                     <xsl:if test="number(precio) &gt; 200">
                                         <p class="oferta">¡Este producto supera los 200€!</p>
@@ -441,16 +416,13 @@
                                     </figure>
                                     <p>Precio: <strong><xsl:value-of select="precio" />€</strong></p>
                                     <p>Precio sin IVA: <xsl:value-of
-                                            select="format-number(number(precio) div 1.21, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) div 1.21, '#0.00')" />€</p>
 
                                     <p>Precio con IVA: <xsl:value-of
-                                            select="format-number(number(precio) * 1.21, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) * 1.21, '#0.00')" />€</p>
 
                                     <p>Descuento 10%: <xsl:value-of
-                                            select="format-number(number(precio) * 0.9, '#0.00')" />
-        €</p>
+                                            select="format-number(number(precio) * 0.9, '#0.00')" />€</p>
 
                                     <xsl:if test="number(precio) &gt; 200">
                                         <p class="oferta">¡Este producto supera los 200€!</p>
