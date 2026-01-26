@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Informática - Componentes PC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/index.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Bienvenido a PCTrend</h1>
+        <p>Tu tienda online de componentes de ordenador – ¡Descubre lo último en hardware!</p>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="xslt/ordenador_0.xml">Catalogo 1</a></li>
+            <li><a href="xslt/ordenador_1.xml">Catalogo 2</a></li>
+            <li><a href="../contacto/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="introduccion">
+            <h2>Expertos en Alto Rendimiento</h2>
+            <p>
+                En <strong>PCTrend</strong>, nos apasiona la tecnología. Somos especialistas en ofrecerte los
+                mejores componentes para que puedas montar o actualizar tu equipo, ya sea para gaming,
+                diseño profesional o tareas de oficina.
+            </p>
+            <p>
+                Desde los procesadores más potentes del mercado hasta las tarjetas gráficas de última generación,
+                seleccionamos cuidadosamente cada pieza de nuestro catálogo para garantizar la máxima compatibilidad
+                y rendimiento. ¡Echa un vistazo a nuestras novedades!
+            </p>
+        </section>
+        <!-- Componentes tendencia -->
+        <section>
+            <h2>Componentes en tendencia</h2>
+            <div class="products-container">
+
+                <article class="product">
+                    <img src="imagenes/procesadores/intel_core_i9.webp" alt="Intel Core i9">
+                    <div class="card-content">
+                        <h3>Intel Core i9</h3>
+                        <ul>
+                            <li><strong>Marca:</strong> Intel</li>
+                            <li><strong>Gama:</strong> Alta</li>
+                            <li><strong>Socket:</strong> LGA 1700</li>
+                            <li><strong>Disipador:</strong> No</li>
+                        </ul>
+                        <p class="precio">400 €</p>
+                        <a href="https://es.wikipedia.org/wiki/Intel_Core_i9" target="_blank">Más información</a>
+                    </div>
+                </article>
+
+                <article class="product">
+                    <img src="imagenes/procesadores/amd_ryzen_5.webp" alt="AMD Ryzen 5">
+                    <div class="card-content">
+                        <h3>AMD Ryzen 5</h3>
+                        <ul>
+                            <li><strong>Marca:</strong> AMD</li>
+                            <li><strong>Gama:</strong> Media</li>
+                            <li><strong>Socket:</strong> AM3</li>
+                            <li><strong>Disipador:</strong> No</li>
+                        </ul>
+                        <p class="precio">200 €</p>
+                        <a href="https://es.wikipedia.org/wiki/Ryzen" target="_blank">Más información</a>
+                    </div>
+                </article>
+
+                <article class="product">
+                    <img src="imagenes/grafica/5090.webp" alt="RTX 5090">
+                    <div class="card-content">
+                        <h3>NVIDIA GeForce RTX 5090</h3>
+                        <ul>
+                            <li><strong>VRAM:</strong> 32GB</li>
+                            <li><strong>PCI:</strong> x16</li>
+                            <li><strong>Ventiladores:</strong> 3</li>
+                        </ul>
+                        <p class="precio">4000 €</p>
+                        <a href="https://en.wikipedia.org/wiki/GeForce_RTX_50_series" target="_blank">Más
+                            información</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+    </main>
+    <button onclick="subirArriba()" id="botonSubir" title="Volver arriba">↑</button>
+    <script src="../script/script.js"></script>
+    <footer>
+        <p>© 2026 PCTrend</p>
+    </footer>
+
+</body>
+
+</html>

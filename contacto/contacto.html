@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Contacto | Configuración de Ordenadores</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que la página sea responsive, ajusta el ancho al dispositivo (móvil, tablet, escritorio)-->
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="../estilos/contacto.css">
+</head>
+
+<body>
+    <header>
+        <!-- Cabecera principal de la página-->
+
+        <h1>Contacto</h1>
+        <!-- 
+        Título principal (H1).
+        Solo debe haber uno por página para SEO.
+    -->
+
+        <p>Soporte · Consultas · Presupuestos personalizados</p>
+        <!-- 
+        Texto descriptivo bajo el título.
+        Ayuda al usuario a entender el propósito de la página.
+    -->
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../xslt/ordenador_0.xml">Catalogo 1</a></li>
+            <li><a href="../xslt/ordenador_1.xml">Catalogo 2</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+
+
+    <main>
+        <!-- 
+        Contenido principal de la página.
+        Mejora la semántica del HTML.
+    -->
+
+        <section class="contacto">
+            <!-- 
+            Sección específica dedicada al formulario de contacto.
+        -->
+
+            <h2>Contáctanos!!</h2>
+            <!-- 
+            Subtítulo de la sección.
+        -->
+
+            <p class="contacto-descripcion">
+                <!-- 
+                Texto explicativo del formulario.
+                Indica al usuario para qué sirve.
+            -->
+                Si tienes alguna duda sobre los componentes, necesitas un presupuesto
+                personalizado o soporte técnico, rellena el formulario y te responderemos
+                lo antes posible.
+            </p>
+
+            <form class="form-contacto" action="#" method="post">
+                <!-- 
+                Formulario de contacto.
+                action="#" indica que no se envía a ningún servidor (de momento).
+                method="post" sería el método correcto si se conecta a backend.
+            -->
+
+                <div class="form-grupo">
+                    <!-- 
+                    Grupo del campo nombre.
+                    Se usa para aplicar estilos de forma ordenada.
+                -->
+
+                    <label for="nombre">Nombre completo</label>
+                    <!-- 
+                    Etiqueta del campo.
+                    El atributo for conecta con el input por su id.
+                -->
+
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    <!-- 
+                    Campo de texto para introducir el nombre.
+                    required obliga a rellenarlo antes de enviar.
+                -->
+                </div>
+
+                <div class="form-grupo">
+                    <!-- Grupo del email -->
+
+                    <label for="email">Correo electrónico</label>
+
+                    <input type="email" id="email" name="email" placeholder="correo@ordenador.com" required>
+                    <!-- 
+                    Campo email.
+                    El navegador valida automáticamente el formato del correo.
+                -->
+                </div>
+
+                <div class="form-grupo">
+                    <!-- Grupo del asunto -->
+
+                    <label for="asunto">Asunto</label>
+
+                    <select id="asunto" name="asunto" required>
+                        <!-- 
+                        Lista desplegable para seleccionar el motivo del mensaje.
+                    -->
+
+                        <option value="">Selecciona una opción</option>
+                        <!-- Opción por defecto -->
+
+                        <option value="consulta">Consulta general</option>
+                        <option value="presupuesto">Presupuesto</option>
+                        <option value="soporte">Soporte técnico</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+
+                <div class="form-grupo">
+                    <!-- Grupo del mensaje -->
+
+                    <label for="mensaje">Mensaje</label>
+
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required>
+                </textarea>
+                    <!-- 
+                    Área de texto para escribir el mensaje.
+                    rows define la altura inicial.
+                -->
+                </div>
+
+                <button type="submit" class="btn-enviar">
+                    <!-- 
+                    Botón para enviar el formulario.
+                -->
+                    Enviar mensaje
+                </button>
+
+            </form>
+        </section>
+    </main>
+    <button onclick="subirArriba()" id="botonSubir" title="Volver arriba">↑</button>
+    <script src="../script/script.js"></script>
+    <footer>
+        <p>© 2026 PCTrend</p>
+    </footer>
+
+</body>
+
+</html>

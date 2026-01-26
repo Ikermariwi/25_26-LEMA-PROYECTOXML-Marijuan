@@ -1,0 +1,73 @@
+<!-- DTD DEL DOCUMENTO ORDENADOR -->
+
+<!ELEMENT ordenador (MAC, componentes)>
+<!ATTLIST ordenador moneda NMTOKEN #REQUIRED>
+<!ATTLIST ordenador gama NMTOKEN #REQUIRED>
+
+<!ELEMENT MAC (#PCDATA)>
+
+<!ELEMENT componentes (procesador+, tarjetagrafica?, placaBase*, memoriaRam*, memoriaPrinciapal+, fuentedeAlimentacion+, chasis*, refrigerador+)>
+
+<!ELEMENT procesador (texto, img?, info*, precio)>
+<!ATTLIST procesador id ID #REQUIRED>
+<!ATTLIST procesador marca NMTOKEN #IMPLIED>
+<!ATTLIST procesador gama NMTOKEN #REQUIRED>
+<!ATTLIST procesador socket NMTOKEN #REQUIRED>
+<!ATTLIST procesador servidor NMTOKEN #REQUIRED>
+<!ATTLIST procesador V CDATA #REQUIRED>
+<!ATTLIST procesador disipador NMTOKEN #IMPLIED>
+<!ATTLIST procesador pastaTermica NMTOKEN #REQUIRED>
+
+<!ELEMENT texto (#PCDATA)>
+<!ELEMENT img (#PCDATA)>
+<!ATTLIST img type (JPEG|JPG|WEBP|PNG) #REQUIRED>
+
+<!ELEMENT info (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio moneda CDATA #FIXED "euro">
+
+<!ELEMENT tarjetagrafica (texto, img, info, precio)>
+<!ATTLIST tarjetagrafica marca NMTOKEN #REQUIRED>
+<!ATTLIST tarjetagrafica gama NMTOKEN #REQUIRED>
+<!ATTLIST tarjetagrafica PCI NMTOKEN #REQUIRED>
+<!ATTLIST tarjetagrafica VRAM NMTOKEN #REQUIRED>
+<!ATTLIST tarjetagrafica vent NMTOKEN #REQUIRED>
+
+<!ELEMENT placaBase (texto, img, info, precio)>
+<!ATTLIST placaBase marca NMTOKEN #REQUIRED>
+<!ATTLIST placaBase ram_max NMTOKEN #REQUIRED>
+<!ATTLIST placaBase chipset NMTOKEN #REQUIRED>
+<!ATTLIST placaBase wifi NMTOKEN #REQUIRED>
+<!ATTLIST placaBase bluetooth NMTOKEN #REQUIRED>
+<!ATTLIST placaBase procesadorRef IDREF #IMPLIED>
+
+<!ELEMENT memoriaRam (texto, img, info, precio)>
+<!ATTLIST memoriaRam marca NMTOKEN #REQUIRED>
+<!ATTLIST memoriaRam tipo NMTOKEN #REQUIRED>
+<!ATTLIST memoriaRam capacidad NMTOKEN #REQUIRED>
+<!ATTLIST memoriaRam velocidad NMTOKEN #REQUIRED>
+<!ATTLIST memoriaRam latencia NMTOKEN #REQUIRED>
+
+<!ELEMENT memoriaPrinciapal (texto, img, info, precio)>
+<!ATTLIST memoriaPrinciapal tipo NMTOKEN #REQUIRED>
+<!ATTLIST memoriaPrinciapal interfaz NMTOKEN #REQUIRED>
+<!ATTLIST memoriaPrinciapal capacidad NMTOKEN #REQUIRED>
+<!ATTLIST memoriaPrinciapal velocidad CDATA #REQUIRED>
+
+<!ELEMENT fuentedeAlimentacion (texto, img, info, precio)>
+<!ATTLIST fuentedeAlimentacion marca NMTOKEN #REQUIRED>
+<!ATTLIST fuentedeAlimentacion potencia NMTOKEN #REQUIRED>
+<!ATTLIST fuentedeAlimentacion certificacion CDATA #REQUIRED>
+<!ATTLIST fuentedeAlimentacion modular NMTOKEN #REQUIRED>
+
+<!ELEMENT chasis (texto, img, info, precio)>
+<!ATTLIST chasis marca NMTOKEN #REQUIRED>
+<!ATTLIST chasis formato NMTOKEN #REQUIRED>
+<!ATTLIST chasis material CDATA #REQUIRED>
+<!ATTLIST chasis ventiladoresIncluidos NMTOKEN #REQUIRED>
+
+<!ELEMENT refrigerador (texto, img, info, precio)>
+<!ATTLIST refrigerador marca NMTOKEN #REQUIRED>
+<!ATTLIST refrigerador tipo NMTOKEN #REQUIRED>
+<!ATTLIST refrigerador compatibleSocket CDATA #REQUIRED>
+<!ATTLIST refrigerador ruido NMTOKEN #REQUIRED>
