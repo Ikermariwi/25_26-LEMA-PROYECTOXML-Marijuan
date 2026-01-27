@@ -90,19 +90,19 @@
         </memoriaRam>
 
         <!-- ALMACENAMIENTO -->
-        <memoriaPrinciapal tipo="SSD" interfaz="NVMe" capacidad="1TB" velocidad="7000MB/s">
+        <memoriaAlmacenamiento tipo="SSD" interfaz="NVMe" capacidad="1TB" velocidad="7000MB/s">
             <texto>Samsung 990 PRO NVMe SSD 1TB</texto>
             <img type="WEBP">samsung_990pro.webp</img>
             <info>https://es.wikipedia.org/wiki/Unidad_de_estado_s%C3%B3lido</info>
             <precio moneda="euro">150</precio>
-        </memoriaPrinciapal>
+        </memoriaAlmacenamiento>
 
-        <memoriaPrinciapal tipo="HDD" interfaz="SATA" capacidad="2TB" velocidad="7200RPM">
+        <memoriaAlmacenamiento tipo="HDD" interfaz="SATA" capacidad="2TB" velocidad="7200RPM">
             <texto>Seagate Barracuda HDD 2TB</texto>
             <img type="JPG">seagate_barracuda_2tb.webp</img>
             <info>https://es.wikipedia.org/wiki/Disco_duro</info>
             <precio moneda="euro">80</precio>
-        </memoriaPrinciapal>
+        </memoriaAlmacenamiento>
 
         <!-- FUENTES DE ALIMENTACIÓN -->
         <fuentedeAlimentacion marca="Corsair" potencia="850W" certificacion="80+ Gold" modular="Si">

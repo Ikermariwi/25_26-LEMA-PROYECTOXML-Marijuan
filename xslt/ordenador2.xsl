@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+    <!-- Variable para sacar informacion de un xml que se encuentra en otra carpeta-->
     <xsl:variable name="XMLordenador" select="document('../dtd/ordenador.xml')" />
 
     <xsl:template match="/">
@@ -12,13 +12,13 @@
             </head>
 
             <body>
-                <!-- HEADER -->
+                <!-- Cabecera-->
                 <header>
                     <h1>Configurador de Ordenadores</h1>
                     <p>Catálogo de componentes</p>
                 </header>
 
-                <!-- NAV -->
+                <!-- Navegador-->
                 <nav class="menu">
                     <ul>
                         <li>
@@ -36,19 +36,21 @@
                     </ul>
                 </nav>
 
-                <!-- ========================= -->
                 <!-- PROCESADORES -->
-                <!-- ========================= -->
                 <section>
                     <h2>Procesadores</h2>
                     <div class="grid">
-                        <xsl:for-each select="$XMLordenador//ordenador/componentes/procesador">
-                            <xsl:variable name="precioOriginal" select="number(precio)" />
-                            <xsl:variable
-                                name="precioDescuento10" select="$precioOriginal * 0.9" />
 
-                            <article
-                                class="card">
+                        <!-- Recorre todos los componentes de tipo procesador del ordenador-->
+                        <xsl:for-each select="$XMLordenador//ordenador/componentes/procesador">
+
+                        <!-- Guarda el precio original del componente como un valor numerico-->
+                            <xsl:variable name="precioOriginal" select="number(precio)" />
+
+                        <!-- Aplica un descuento del 10%-->
+                            <xsl:variable name="precioDescuento10" select="$precioOriginal * 0.9" />
+
+                            <article class="card">
                                 <img src="../imagenes/procesadores/{img}" alt="{texto}" />
                                 <div class="card-content">
                                     <h3>
@@ -57,24 +59,23 @@
                                     <ul>
                                         <li>
                                             <strong>Marca: </strong>
-                                            <xsl:value-of select="@marca" />
+                                            <xsl:value-of select="@marca"/>
                                         </li>
                                         <li>
                                             <strong>Gama: </strong>
-                                            <xsl:value-of select="@gama" />
+                                            <xsl:value-of select="@gama"/>
                                         </li>
                                         <li>
                                             <strong>Socket: </strong>
-                                            <xsl:value-of select="@socket" />
+                                            <xsl:value-of select="@socket"/>
                                         </li>
                                         <li>
                                             <strong>Disipador: </strong>
-                                            <xsl:value-of select="@disipador" />
+                                            <xsl:value-of select="@disipador"/>
                                         </li>
                                     </ul>
                                     <p class="precio">
-                                        <xsl:value-of
-                                            select="format-number($precioDescuento10, '#0.00')" /> € </p>
+                                        <xsl:value-of select="format-number($precioDescuento10, '#0.00')" /> € </p>
                                     <a href="{info}" target="_blank">Más información</a>
                                 </div>
                             </article>
@@ -227,7 +228,7 @@
                     <h2>Memorias Principales</h2>
                     <div class="grid">
                         <xsl:for-each
-                            select="$XMLordenador//ordenador/componentes/memoriaPrinciapal">
+                            select="$XMLordenador//ordenador/componentes/memoriaAlmacenamiento">
                             <xsl:variable name="precioOriginal" select="number(precio)" />
                             <xsl:variable
                                 name="precioDescuento10" select="$precioOriginal * 0.9" />

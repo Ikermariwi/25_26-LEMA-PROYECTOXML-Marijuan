@@ -30,7 +30,7 @@
                     </ul>
                 </nav>
 
-                <!-- =================== SECCIÓN: Procesadores =================== -->
+                <!-- Procesadores-->
                 <section class="categoria">
                     <header>
                         <h2>Procesadores</h2>
@@ -82,7 +82,7 @@
                     </ul>
                 </section>
 
-                <!-- =================== SECCIÓN: Tarjetas Gráficas =================== -->
+                <!-- Tarjetas Gráficas-->
                 <section class="categoria">
                     <header>
                         <h2>Tarjetas Gráficas</h2>
@@ -134,7 +134,7 @@
                     </ul>
                 </section>
 
-                <!-- =================== SECCIÓN: Placas Base =================== -->
+                <!-- Placas Base-->
                 <section class="categoria">
                     <header>
                         <h2>Placas Base</h2>
@@ -186,7 +186,7 @@
                     </ul>
                 </section>
 
-                <!-- =================== SECCIÓN: Memoria RAM =================== -->
+                <!-- Memoria RAM-->
                 <section class="categoria">
                     <header>
                         <h2>Memoria RAM</h2>
@@ -237,14 +237,14 @@
                     </ul>
                 </section>
 
-                <!-- =================== SECCIÓN: Memoria Principal =================== -->
+                <!-- Memoria Almacenamiento-->
                 <section class="categoria">
                     <header>
-                        <h2>Memoria Principal</h2>
+                        <h2>Memoria Almacenamiento</h2>
                     </header>
                     <ul>
                         <xsl:for-each
-                            select="$XMLordenador//ordenador/componentes/memoriaPrinciapal">
+                            select="$XMLordenador//ordenador/componentes/memoriaAlmacenamiento">
                             <li class="producto">
                                 <article>
                                     <h3>
@@ -290,7 +290,7 @@
                     </ul>
                 </section>
 
-                <!-- =================== SECCIÓN: Fuente de Alimentación =================== -->
+                <!-- Fuente de Alimentación-->
                 <section class="categoria">
                     <header>
                         <h2>Fuentes de Alimentación</h2>
@@ -343,7 +343,7 @@
                     </ul>
                 </section>
 
-                <!-- =================== SECCIÓN: Chasis =================== -->
+                <!-- Chasis-->
                 <section class="categoria">
                     <header>
                         <h2>Chasis</h2>
@@ -395,7 +395,7 @@
                     </ul>
                 </section>
 
-                <!-- =================== SECCIÓN: Refrigeradores =================== -->
+                <!-- Refrigeradores-->
                 <section class="categoria">
                     <header>
                         <h2>Refrigeradores</h2>

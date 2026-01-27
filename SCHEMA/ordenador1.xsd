@@ -15,7 +15,7 @@
                             <xs:element name="tarjetagrafica" minOccurs="0" />
                             <xs:element name="placaBase" maxOccurs="unbounded" />
                             <xs:element name="memoriaRam" maxOccurs="unbounded" />
-                            <xs:element name="memoriaPrinciapal" maxOccurs="unbounded" />
+                            <xs:element name="memoriaAlmacenamiento" maxOccurs="unbounded" />
                             <xs:element name="fuentedeAlimentacion" maxOccurs="unbounded" />
                             <xs:element name="chasis" maxOccurs="unbounded" />
                             <xs:element name="refrigerador" maxOccurs="unbounded" />

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ordenador xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ordenador1.xsd" moneda="EUR" gama="alta">
+<!DOCTYPE ordenador SYSTEM "ordenador.dtd">
+
+<ordenador moneda="euro" gama="alta">
 
     <MAC>23:23:23:23:23</MAC>
 
@@ -58,16 +60,16 @@
         </tarjetagrafica>
 
         <!-- PLACAS BASE -->
-        <placaBase marca="ASUS" ram_max="64GB" chipset="AM_5" wifi="5.0" bluetooth="5.1" procesadorRef="cpu1">
+        <placaBase marca="ASUS" ram_max="64GB" chipset="AM_5" wifi="5.0" bluetooth="5.1">
             <texto>ASUS ROG Strix X870-A Gaming WiFi</texto>
-            <img type="JPEG">placaBase_am5.jpeg</img>
+            <img type="JPG">placaBase_am5.jpg</img>
             <info>https://es.wikipedia.org/wiki/Placa_base</info>
             <precio moneda="euro">150</precio>
         </placaBase>
 
         <placaBase marca="AORUS" ram_max="128GB" chipset="AM_9" wifi="6.0" bluetooth="7.1">
             <texto>GIGABYTE X870M AORUS Elite WIFI7</texto>
-            <img type="JPEG">placaBase_am9.jpeg</img>
+            <img type="JPG">placaBase_am9.jpg</img>
             <info>https://www.idealo.es/cat/3018F106878831/placas-base.html</info>
             <precio moneda="euro">250</precio>
         </placaBase>
@@ -88,19 +90,19 @@
         </memoriaRam>
 
         <!-- ALMACENAMIENTO -->
-        <memoriaPrinciapal tipo="SSD" interfaz="NVMe" capacidad="1TB" velocidad="7000MB/s">
+        <memoriaAlmacenamiento tipo="SSD" interfaz="NVMe" capacidad="1TB" velocidad="7000MB/s">
             <texto>Samsung 990 PRO NVMe SSD 1TB</texto>
             <img type="WEBP">samsung_990pro.webp</img>
             <info>https://es.wikipedia.org/wiki/Unidad_de_estado_s%C3%B3lido</info>
             <precio moneda="euro">150</precio>
-        </memoriaPrinciapal>
+        </memoriaAlmacenamiento>
 
-        <memoriaPrinciapal tipo="HDD" interfaz="SATA" capacidad="2TB" velocidad="7200RPM">
+        <memoriaAlmacenamiento tipo="HDD" interfaz="SATA" capacidad="2TB" velocidad="7200RPM">
             <texto>Seagate Barracuda HDD 2TB</texto>
             <img type="JPG">seagate_barracuda_2tb.webp</img>
             <info>https://es.wikipedia.org/wiki/Disco_duro</info>
             <precio moneda="euro">80</precio>
-        </memoriaPrinciapal>
+        </memoriaAlmacenamiento>
 
         <!-- FUENTES DE ALIMENTACIÓN -->
         <fuentedeAlimentacion marca="Corsair" potencia="850W" certificacion="80+ Gold" modular="Si">

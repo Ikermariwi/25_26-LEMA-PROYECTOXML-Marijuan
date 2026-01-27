@@ -6,7 +6,7 @@
 
 <!ELEMENT MAC (#PCDATA)>
 
-<!ELEMENT componentes (procesador+, tarjetagrafica?, placaBase*, memoriaRam*, memoriaPrinciapal+, fuentedeAlimentacion+, chasis*, refrigerador+)>
+<!ELEMENT componentes (procesador+, tarjetagrafica?, placaBase*, memoriaRam*, memoriaAlmacenamiento+, fuentedeAlimentacion+, chasis*, refrigerador+)>
 
 <!ELEMENT procesador (texto, img?, info*, precio)>
 <!ATTLIST procesador id ID #REQUIRED>
@@ -48,11 +48,11 @@
 <!ATTLIST memoriaRam velocidad NMTOKEN #REQUIRED>
 <!ATTLIST memoriaRam latencia NMTOKEN #REQUIRED>
 
-<!ELEMENT memoriaPrinciapal (texto, img, info, precio)>
-<!ATTLIST memoriaPrinciapal tipo NMTOKEN #REQUIRED>
-<!ATTLIST memoriaPrinciapal interfaz NMTOKEN #REQUIRED>
-<!ATTLIST memoriaPrinciapal capacidad NMTOKEN #REQUIRED>
-<!ATTLIST memoriaPrinciapal velocidad CDATA #REQUIRED>
+<!ELEMENT memoriaAlmacenamiento (texto, img, info, precio)>
+<!ATTLIST memoriaAlmacenamiento tipo NMTOKEN #REQUIRED>
+<!ATTLIST memoriaAlmacenamiento interfaz NMTOKEN #REQUIRED>
+<!ATTLIST memoriaAlmacenamiento capacidad NMTOKEN #REQUIRED>
+<!ATTLIST memoriaAlmacenamiento velocidad CDATA #REQUIRED>
 
 <!ELEMENT fuentedeAlimentacion (texto, img, info, precio)>
 <!ATTLIST fuentedeAlimentacion marca NMTOKEN #REQUIRED>
