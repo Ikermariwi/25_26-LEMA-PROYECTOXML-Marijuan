@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- ELEMENTO RAÍZ -->
+    <xs:element name="ordenador">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="MAC" type="tipoMAC" />
+
+                <xs:element name="componentes">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="procesador" maxOccurs="unbounded" />
+                            <xs:element name="tarjetagrafica" minOccurs="0" />
+                            <xs:element name="placaBase" maxOccurs="unbounded" />
+                            <xs:element name="memoriaRam" maxOccurs="unbounded" />
+                            <xs:element name="memoriaAlmacenamiento" maxOccurs="unbounded" />
+                            <xs:element name="fuentedeAlimentacion" maxOccurs="unbounded" />
+                            <xs:element name="chasis" maxOccurs="unbounded" />
+                            <xs:element name="refrigerador" maxOccurs="unbounded" />
+
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+
+            <xs:attribute name="moneda" type="tipoMoneda" use="required" />
+            <xs:attribute name="gama" type="tipoGama" use="required" />
+
+        </xs:complexType>
+    </xs:element>
+
+    <!-- TIPOS DEFINIDOS POR EL USUARIO-->
+    
+    <!-- Patron de caracteres que tiene que tener la MAC-->
+    <xs:simpleType name="tipoMAC">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([0-9A-Fa-f]{2}:){4}[0-9A-Fa-f]{2}" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- Las 3 opciones que tiene que tener la gama-->
+    <xs:simpleType name="tipoGama">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="baja" />
+            <xs:enumeration value="media" />
+            <xs:enumeration value="alta" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- La moneda tiene que ser EUR-->
+    <xs:simpleType name="tipoMoneda">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="EUR" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- La url tiene que tener https-->
+    <xs:simpleType name="tipoURL">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="https?://.+" />
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
