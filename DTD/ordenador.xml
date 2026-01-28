@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE ordenador SYSTEM "ordenador.dtd">
+
+<ordenador moneda="euro" gama="alta">
+    
+    <MAC>23:23:23:23:23</MAC>
+    
+    <componentes>
+        
+        <!-- PROCESADORES -->
+        <procesador id="cpu1" marca="intel" gama="baja" socket="H510" disipador="Si">
+            <texto>Intel Celeron</texto>
+            <img type="JPG">intel_celeron.jpg</img>
+            <info>https://es.wikipedia.org/wiki/Intel_Celeron</info>
+            <precio moneda="euro">100</precio>
+        </procesador>
+        
+        <procesador id="cpu2" marca="AMD" gama="baja" socket="A620"  disipador="Si">
+            <texto>AMD Athlon</texto>
+            <img type="JPG">amd_athlon.jpg</img>
+            <info>https://es.wikipedia.org/wiki/AMD_Athlon</info>
+            <precio moneda="euro">100</precio>
+        </procesador>
+        
+        <procesador id="cpu3" marca="intel" gama="media" socket="LGA_1151" disipador="No">
+            <texto>Intel Core i5</texto>
+            <img type="WEBP">intel_core_i5.webp</img>
+            <info>https://es.wikipedia.org/wiki/Intel_Core_i5</info>
+            <precio moneda="euro">200</precio>
+        </procesador>
+        
+        <procesador id="cpu4" marca="AMD" gama="media" socket="AM3" disipador="No">
+            <texto>AMD Ryzen 5</texto>
+            <img type="WEBP">amd_ryzen_5.webp</img>
+            <info>https://es.wikipedia.org/wiki/Ryzen</info>
+            <precio moneda="euro">200</precio>
+        </procesador>
+        
+        <procesador id="cpu5" marca="intel" gama="alta" socket="LGA_1700" disipador="No">
+            <texto>Intel Core i9</texto>
+            <img type="WEBP">intel_core_i9.webp</img>
+            <info>https://es.wikipedia.org/wiki/Intel_Core_i9</info>
+            <precio moneda="euro">400</precio>
+        </procesador>
+        
+        <procesador id="cpu6" marca="AMD" gama="alta" socket="X670" disipador="No">
+            <texto>AMD Threadripper</texto>
+            <img type="WEBP">amd_theardripper.webp</img>
+            <info>https://en.wikipedia.org/wiki/Threadripper</info>
+            <precio moneda="euro">1000</precio>
+        </procesador>
+        
+        <!-- TARJETA GRÁFICA -->
+        <tarjetagrafica marca="nvidia" gama="alta" PCI="x16" VRAM="32GB" vent="3">
+            <texto>NVIDIA GeForce RTX 5090</texto>
+            <img type="WEBP">5090.webp</img>
+            <info>https://en.wikipedia.org/wiki/GeForce_RTX_50_series</info>
+            <precio moneda="euro">4000</precio>
+        </tarjetagrafica>
+        
+        <!-- PLACAS BASE -->
+        <placaBase marca="ASUS" ram_max="64GB" chipset="AM_5" wifi="5.0" bluetooth="5.1">
+            <texto>ASUS ROG Strix X870-A Gaming WiFi</texto>
+            <img type="JPG">placaBase_am5.jpg</img>
+            <info>https://es.wikipedia.org/wiki/Placa_base</info>
+            <precio moneda="euro">150</precio>
+        </placaBase>
+        
+        <placaBase marca="AORUS" ram_max="128GB" chipset="AM_9" wifi="6.0" bluetooth="7.1">
+            <texto>GIGABYTE X870M AORUS Elite WIFI7</texto>
+            <img type="JPG">placaBase_am9.jpg</img>
+            <info>https://www.idealo.es/cat/3018F106878831/placas-base.html</info>
+            <precio moneda="euro">250</precio>
+        </placaBase>
+        
+        <!-- MEMORIA RAM -->
+        <memoriaRam marca="Corsair" tipo="DDR5" capacidad="32GB" velocidad="6000MHz">
+            <texto>Corsair Vengeance DDR5 32GB</texto>
+            <img type="WEBP">corsair_vengeance_ddr5.webp</img>
+            <info>https://es.wikipedia.org/wiki/DDR5</info>
+            <precio moneda="euro">180</precio>
+        </memoriaRam>
+        
+        <memoriaRam marca="Kingston" tipo="DDR4" capacidad="16GB" velocidad="3200MHz">
+            <texto>Kingston Fury Beast DDR4 16GB</texto>
+            <img type="WEBP">kingston_fury_ddr4.webp</img>
+            <info>https://es.wikipedia.org/wiki/DDR4</info>
+            <precio moneda="euro">90</precio>
+        </memoriaRam>
+        
+        <!-- ALMACENAMIENTO -->
+        <memoriaAlmacenamiento tipo="SSD" interfaz="NVMe" capacidad="1TB" velocidad="7000MB/s">
+            <texto>Samsung 990 PRO NVMe SSD 1TB</texto>
+            <img type="WEBP">samsung_990pro.webp</img>
+            <info>https://es.wikipedia.org/wiki/Unidad_de_estado_s%C3%B3lido</info>
+            <precio moneda="euro">150</precio>
+        </memoriaAlmacenamiento>
+        
+        <memoriaAlmacenamiento tipo="HDD" interfaz="SATA" capacidad="2TB" velocidad="7200RPM">
+            <texto>Seagate Barracuda HDD 2TB</texto>
+            <img type="JPG">seagate_barracuda_2tb.webp</img>
+            <info>https://es.wikipedia.org/wiki/Disco_duro</info>
+            <precio moneda="euro">80</precio>
+        </memoriaAlmacenamiento>
+        
+        <!-- FUENTES DE ALIMENTACIÓN -->
+        <fuentedeAlimentacion marca="Corsair" potencia="850W" certificacion="80+ Gold" modular="Si">
+            <texto>Corsair RM850x</texto>
+            <img type="WEBP">corsair_rm850x.webp</img>
+            <info>https://es.wikipedia.org/wiki/Fuente_de_alimentaci%C3%B3n</info>
+            <precio moneda="euro">160</precio>
+        </fuentedeAlimentacion>
+        
+        <fuentedeAlimentacion marca="EVGA" potencia="650W" certificacion="80+ Bronze" modular="No">
+            <texto>EVGA 650 BR</texto>
+            <img type="JPG">evga_650br.webp</img>
+            <info>https://es.wikipedia.org/wiki/Fuente_de_alimentaci%C3%B3n</info>
+            <precio moneda="euro">90</precio>
+        </fuentedeAlimentacion>
+        
+        <!-- CHASIS -->
+        <chasis marca="NZXT" formato="ATX" material="Acero y cristal templado" ventiladoresIncluidos="4">
+            <texto>NZXT H7 Flow</texto>
+            <img type="WEBP">nzxt_h7_flow.webp</img>
+            <info>https://es.wikipedia.org/wiki/Caja_de_computadora</info>
+            <precio moneda="euro">150</precio>
+        </chasis>
+        
+        <chasis marca="Corsair" formato="Micro-ATX" material="Acero" ventiladoresIncluidos="2">
+            <texto>Corsair 4000D Airflow</texto>
+            <img type="WEBP">corsair_4000d.webp</img>
+            <info>https://es.wikipedia.org/wiki/Caja_de_computadora</info>
+            <precio moneda="euro">120</precio>
+        </chasis>
+        
+        <!-- REFRIGERACIÓN -->
+        <refrigerador marca="Noctua" tipo="Aire" cpuRef="cpu5" compatibleSocket="LGA1700, AM5" ruido="Bajo">
+            <texto>Noctua NH-D15</texto>
+            <img type="WEBP">noctua_nhd15.webp</img>
+            <info>https://es.wikipedia.org/wiki/Disipador_de_calor</info>
+            <precio moneda="euro">110</precio>
+        </refrigerador>
+        
+        <refrigerador marca="Corsair" tipo="Liquida" cpuRef="cpu5" compatibleSocket="LGA1700, AM5" ruido="Medio">
+            <texto>Corsair iCUE H150i Elite</texto>
+            <img type="WEBP">corsair_h150i.webp</img>
+            <info>https://es.wikipedia.org/wiki/Refrigeraci%C3%B3n_l%C3%ADquida</info>
+            <precio moneda="euro">200</precio>
+        </refrigerador>
+        
+    </componentes>
+</ordenador>
