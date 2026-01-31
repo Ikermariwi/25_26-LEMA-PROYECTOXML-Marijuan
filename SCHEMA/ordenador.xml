@@ -133,14 +133,14 @@
         </chasis>
         
         <!-- REFRIGERACIÓN -->
-        <refrigerador marca="Noctua" tipo="Aire" compatibleSocket="LGA1700, AM5" ruido="Bajo">
+        <refrigerador marca="Noctua" tipo="Aire" cpuRef="cpu5" compatibleSocket="LGA1700, AM5" ruido="Bajo">
             <texto>Noctua NH-D15</texto>
             <img type="WEBP">noctua_nhd15.webp</img>
             <info>https://es.wikipedia.org/wiki/Disipador_de_calor</info>
             <precio moneda="euro">110</precio>
         </refrigerador>
         
-        <refrigerador marca="Corsair" tipo="Liquida" compatibleSocket="LGA1700, AM5" ruido="Medio">
+        <refrigerador marca="Corsair" tipo="Liquida" cpuRef="cpu5" compatibleSocket="LGA1700, AM5" ruido="Medio">
             <texto>Corsair iCUE H150i Elite</texto>
             <img type="WEBP">corsair_h150i.webp</img>
             <info>https://es.wikipedia.org/wiki/Refrigeraci%C3%B3n_l%C3%ADquida</info>

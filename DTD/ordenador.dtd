@@ -8,44 +8,26 @@
 
 <!ELEMENT componentes (procesador+, tarjetagrafica?, placaBase*, memoriaRam*, memoriaAlmacenamiento+, fuentedeAlimentacion+, chasis*, refrigerador+)>
 
-<<<<<<< HEAD
 <!-- PROCESADOR -->
-=======
->>>>>>> ba102e9deb834b179bedfe2fe9bce3ecd0c91710
 <!ELEMENT procesador (texto, img?, info*, precio)>
 <!ATTLIST procesador id ID #REQUIRED>
 <!ATTLIST procesador marca NMTOKEN #IMPLIED>
 <!ATTLIST procesador gama NMTOKEN #REQUIRED>
 <!ATTLIST procesador socket NMTOKEN #REQUIRED>
-<<<<<<< HEAD
 <!ATTLIST procesador disipador NMTOKEN #IMPLIED>
 
 <!-- ELEMENTOS COMUNES -->
 <!ELEMENT texto (#PCDATA)>
 
-=======
-<!ATTLIST procesador servidor NMTOKEN #REQUIRED>
-<!ATTLIST procesador V CDATA #REQUIRED>
-<!ATTLIST procesador disipador NMTOKEN #IMPLIED>
-<!ATTLIST procesador pastaTermica NMTOKEN #REQUIRED>
-
-<!ELEMENT texto (#PCDATA)>
->>>>>>> ba102e9deb834b179bedfe2fe9bce3ecd0c91710
 <!ELEMENT img (#PCDATA)>
 <!ATTLIST img type (JPEG|JPG|WEBP|PNG) #REQUIRED>
 
 <!ELEMENT info (#PCDATA)>
-<<<<<<< HEAD
 
 <!ELEMENT precio (#PCDATA)>
 <!ATTLIST precio moneda CDATA #FIXED "euro">
 
 <!-- TARJETA GRÁFICA -->
-=======
-<!ELEMENT precio (#PCDATA)>
-<!ATTLIST precio moneda CDATA #FIXED "euro">
-
->>>>>>> ba102e9deb834b179bedfe2fe9bce3ecd0c91710
 <!ELEMENT tarjetagrafica (texto, img, info, precio)>
 <!ATTLIST tarjetagrafica marca NMTOKEN #REQUIRED>
 <!ATTLIST tarjetagrafica gama NMTOKEN #REQUIRED>
@@ -53,72 +35,46 @@
 <!ATTLIST tarjetagrafica VRAM NMTOKEN #REQUIRED>
 <!ATTLIST tarjetagrafica vent NMTOKEN #REQUIRED>
 
-<<<<<<< HEAD
 <!-- PLACA BASE -->
-=======
->>>>>>> ba102e9deb834b179bedfe2fe9bce3ecd0c91710
 <!ELEMENT placaBase (texto, img, info, precio)>
 <!ATTLIST placaBase marca NMTOKEN #REQUIRED>
 <!ATTLIST placaBase ram_max NMTOKEN #REQUIRED>
 <!ATTLIST placaBase chipset NMTOKEN #REQUIRED>
 <!ATTLIST placaBase wifi NMTOKEN #REQUIRED>
 <!ATTLIST placaBase bluetooth NMTOKEN #REQUIRED>
-<<<<<<< HEAD
 
 <!-- MEMORIA RAM -->
-=======
-<!ATTLIST placaBase procesadorRef IDREF #IMPLIED>
-
->>>>>>> ba102e9deb834b179bedfe2fe9bce3ecd0c91710
 <!ELEMENT memoriaRam (texto, img, info, precio)>
 <!ATTLIST memoriaRam marca NMTOKEN #REQUIRED>
 <!ATTLIST memoriaRam tipo NMTOKEN #REQUIRED>
 <!ATTLIST memoriaRam capacidad NMTOKEN #REQUIRED>
 <!ATTLIST memoriaRam velocidad NMTOKEN #REQUIRED>
-<<<<<<< HEAD
 
 <!-- ALMACENAMIENTO -->
-=======
-<!ATTLIST memoriaRam latencia NMTOKEN #REQUIRED>
-
->>>>>>> ba102e9deb834b179bedfe2fe9bce3ecd0c91710
 <!ELEMENT memoriaAlmacenamiento (texto, img, info, precio)>
 <!ATTLIST memoriaAlmacenamiento tipo NMTOKEN #REQUIRED>
 <!ATTLIST memoriaAlmacenamiento interfaz NMTOKEN #REQUIRED>
 <!ATTLIST memoriaAlmacenamiento capacidad NMTOKEN #REQUIRED>
 <!ATTLIST memoriaAlmacenamiento velocidad CDATA #REQUIRED>
 
-<<<<<<< HEAD
 <!-- FUENTE DE ALIMENTACIÓN -->
-=======
->>>>>>> ba102e9deb834b179bedfe2fe9bce3ecd0c91710
 <!ELEMENT fuentedeAlimentacion (texto, img, info, precio)>
 <!ATTLIST fuentedeAlimentacion marca NMTOKEN #REQUIRED>
 <!ATTLIST fuentedeAlimentacion potencia NMTOKEN #REQUIRED>
 <!ATTLIST fuentedeAlimentacion certificacion CDATA #REQUIRED>
 <!ATTLIST fuentedeAlimentacion modular NMTOKEN #REQUIRED>
 
-<<<<<<< HEAD
 <!-- CHASIS -->
-=======
->>>>>>> ba102e9deb834b179bedfe2fe9bce3ecd0c91710
 <!ELEMENT chasis (texto, img, info, precio)>
 <!ATTLIST chasis marca NMTOKEN #REQUIRED>
 <!ATTLIST chasis formato NMTOKEN #REQUIRED>
 <!ATTLIST chasis material CDATA #REQUIRED>
 <!ATTLIST chasis ventiladoresIncluidos NMTOKEN #REQUIRED>
 
-<<<<<<< HEAD
 <!-- REFRIGERACIÓN -->
-=======
->>>>>>> ba102e9deb834b179bedfe2fe9bce3ecd0c91710
 <!ELEMENT refrigerador (texto, img, info, precio)>
 <!ATTLIST refrigerador marca NMTOKEN #REQUIRED>
 <!ATTLIST refrigerador tipo NMTOKEN #REQUIRED>
 <!ATTLIST refrigerador compatibleSocket CDATA #REQUIRED>
-<<<<<<< HEAD
 <!ATTLIST refrigerador ruido NMTOKEN #REQUIRED>
 <!ATTLIST refrigerador cpuRef IDREF #IMPLIED>
-=======
-<!ATTLIST refrigerador ruido NMTOKEN #REQUIRED>
->>>>>>> ba102e9deb834b179bedfe2fe9bce3ecd0c91710
