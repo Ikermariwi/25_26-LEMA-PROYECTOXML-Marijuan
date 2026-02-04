@@ -82,7 +82,7 @@ nav.menu ul li a.active {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* --- ESTILOS DE SECCIÓN Y GRID (PARA CATÁLOGO XSLT) --- */
+/* --- ESTILOS DE SECCION Y GRID (PARA CATALOGO XSLT) --- */
 section {
     padding: 40px 5%;
     max-width: 1500px;
@@ -188,7 +188,7 @@ section h2 {
     color: #020617;
 }
 
-/* --- BOTÓN VOLVER ARRIBA --- */
+/* --- BOTON VOLVER ARRIBA --- */
 #botonSubir {
     display: none;
     position: fixed;

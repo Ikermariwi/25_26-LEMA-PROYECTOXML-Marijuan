@@ -27,7 +27,7 @@
 <!ELEMENT precio (#PCDATA)>
 <!ATTLIST precio moneda CDATA #FIXED "euro">
 
-<!-- TARJETA GRÁFICA -->
+<!-- TARJETA GRAFICA -->
 <!ELEMENT tarjetagrafica (texto, img, info, precio)>
 <!ATTLIST tarjetagrafica marca NMTOKEN #REQUIRED>
 <!ATTLIST tarjetagrafica gama NMTOKEN #REQUIRED>
@@ -57,7 +57,7 @@
 <!ATTLIST memoriaAlmacenamiento capacidad NMTOKEN #REQUIRED>
 <!ATTLIST memoriaAlmacenamiento velocidad CDATA #REQUIRED>
 
-<!-- FUENTE DE ALIMENTACIÓN -->
+<!-- FUENTE DE ALIMENTACION -->
 <!ELEMENT fuentedeAlimentacion (texto, img, info, precio)>
 <!ATTLIST fuentedeAlimentacion marca NMTOKEN #REQUIRED>
 <!ATTLIST fuentedeAlimentacion potencia NMTOKEN #REQUIRED>
@@ -71,7 +71,7 @@
 <!ATTLIST chasis material CDATA #REQUIRED>
 <!ATTLIST chasis ventiladoresIncluidos NMTOKEN #REQUIRED>
 
-<!-- REFRIGERACIÓN -->
+<!-- REFRIGERACION -->
 <!ELEMENT refrigerador (texto, img, info, precio)>
 <!ATTLIST refrigerador marca NMTOKEN #REQUIRED>
 <!ATTLIST refrigerador tipo NMTOKEN #REQUIRED>

@@ -1,5 +1,5 @@
 // Esperar a que cargue la página
-window.onscroll = function() {
+window.onscroll = function () {
     let miBoton = document.getElementById("botonSubir");
     if (miBoton) { // Verificamos que el botón exista
         if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
