@@ -5,58 +5,213 @@
     <xs:element name="ordenador">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="MAC" type="tipoMAC" />
+                <xs:element name="MAC" type="tipoMAC"/>
+                
                 <xs:element name="componentes">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="procesador" maxOccurs="unbounded" />
-                            <xs:element name="tarjetagrafica" minOccurs="0" />
-                            <xs:element name="placaBase" maxOccurs="unbounded" />
-                            <xs:element name="memoriaRam" maxOccurs="unbounded" />
-                            <xs:element name="memoriaAlmacenamiento" maxOccurs="unbounded" />
-                            <xs:element name="fuentedeAlimentacion" maxOccurs="unbounded" />
-                            <xs:element name="chasis" maxOccurs="unbounded" />
-                            <xs:element name="refrigerador" maxOccurs="unbounded" />
+                            
+                            <!-- PROCESADORES -->
+                            <xs:element name="procesador" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="texto" type="xs:string"/>
+                                        <xs:element name="img" type="tipoImgElement" minOccurs="0"/>
+                                        <xs:element name="info" type="tipoInfo" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xs:element name="precio" type="tipoPrecio"/>
+                                    </xs:sequence>
+                                    
+                                    <xs:attribute name="id" type="xs:ID" use="required"/>
+                                    <xs:attribute name="marca" type="xs:string" use="optional"/>
+                                    <xs:attribute name="gama" type="tipoGama" use="required"/>
+                                    <xs:attribute name="socket" type="xs:string" use="required"/>
+                                    <xs:attribute name="disipador" type="xs:string" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                            
+                            <!-- TARJETA GRÁFICA -->
+                            <xs:element name="tarjetagrafica" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="texto" type="xs:string"/>
+                                        <xs:element name="img" type="tipoImgElement"/>
+                                        <xs:element name="info" type="tipoInfo"/>
+                                        <xs:element name="precio" type="tipoPrecio"/>
+                                    </xs:sequence>
+                                    
+                                    <xs:attribute name="marca" type="xs:string" use="required"/>
+                                    <xs:attribute name="gama" type="tipoGama" use="required"/>
+                                    <xs:attribute name="PCI" type="xs:string" use="required"/>
+                                    <xs:attribute name="VRAM" type="xs:string" use="required"/>
+                                    <xs:attribute name="vent" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            
+                            <!-- PLACAS BASE -->
+                            <xs:element name="placaBase" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="texto" type="xs:string"/>
+                                        <xs:element name="img" type="tipoImgElement"/>
+                                        <xs:element name="info" type="tipoInfo"/>
+                                        <xs:element name="precio" type="tipoPrecio"/>
+                                    </xs:sequence>
+                                    
+                                    <xs:attribute name="marca" type="xs:string" use="required"/>
+                                    <xs:attribute name="ram_max" type="xs:string" use="required"/>
+                                    <xs:attribute name="chipset" type="xs:string" use="required"/>
+                                    <xs:attribute name="wifi" type="xs:string" use="required"/>
+                                    <xs:attribute name="bluetooth" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            
+                            <!-- MEMORIA RAM -->
+                            <xs:element name="memoriaRam" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="texto" type="xs:string"/>
+                                        <xs:element name="img" type="tipoImgElement"/>
+                                        <xs:element name="info" type="tipoInfo"/>
+                                        <xs:element name="precio" type="tipoPrecio"/>
+                                    </xs:sequence>
+                                    
+                                    <xs:attribute name="marca" type="xs:string" use="required"/>
+                                    <xs:attribute name="tipo" type="xs:string" use="required"/>
+                                    <xs:attribute name="capacidad" type="xs:string" use="required"/>
+                                    <xs:attribute name="velocidad" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            
+                            <!-- MEMORIA DE ALMACENAMIENTO -->
+                            <xs:element name="memoriaAlmacenamiento" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="texto" type="xs:string"/>
+                                        <xs:element name="img" type="tipoImgElement"/>
+                                        <xs:element name="info" type="tipoInfo"/>
+                                        <xs:element name="precio" type="tipoPrecio"/>
+                                    </xs:sequence>
+                                    
+                                    <xs:attribute name="tipo" type="xs:string" use="required"/>
+                                    <xs:attribute name="interfaz" type="xs:string" use="required"/>
+                                    <xs:attribute name="capacidad" type="xs:string" use="required"/>
+                                    <xs:attribute name="velocidad" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            
+                            <!-- FUENTES DE ALIMENTACIÓN -->
+                            <xs:element name="fuentedeAlimentacion" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="texto" type="xs:string"/>
+                                        <xs:element name="img" type="tipoImgElement"/>
+                                        <xs:element name="info" type="tipoInfo"/>
+                                        <xs:element name="precio" type="tipoPrecio"/>
+                                    </xs:sequence>
+                                    
+                                    <xs:attribute name="marca" type="xs:string" use="required"/>
+                                    <xs:attribute name="potencia" type="xs:string" use="required"/>
+                                    <xs:attribute name="certificacion" type="xs:string" use="required"/>
+                                    <xs:attribute name="modular" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            
+                            <!-- CHASIS -->
+                            <xs:element name="chasis" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="texto" type="xs:string"/>
+                                        <xs:element name="img" type="tipoImgElement"/>
+                                        <xs:element name="info" type="tipoInfo"/>
+                                        <xs:element name="precio" type="tipoPrecio"/>
+                                    </xs:sequence>
+                                    
+                                    <xs:attribute name="marca" type="xs:string" use="required"/>
+                                    <xs:attribute name="formato" type="xs:string" use="required"/>
+                                    <xs:attribute name="material" type="xs:string" use="required"/>
+                                    <xs:attribute name="ventiladoresIncluidos" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            
+                            <!-- REFRIGERACIÓN -->
+                            <xs:element name="refrigerador" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="texto" type="xs:string"/>
+                                        <xs:element name="img" type="tipoImgElement"/>
+                                        <xs:element name="info" type="tipoInfo"/>
+                                        <xs:element name="precio" type="tipoPrecio"/>
+                                    </xs:sequence>
+                                    
+                                    <xs:attribute name="marca" type="xs:string" use="required"/>
+                                    <xs:attribute name="tipo" type="xs:string" use="required"/>
+                                    <xs:attribute name="compatibleSocket" type="xs:string" use="required"/>
+                                    <xs:attribute name="ruido" type="xs:string" use="required"/>
+                                    <xs:attribute name="cpuRef" type="xs:IDREF" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                            
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
+                
             </xs:sequence>
-            <xs:attribute name="moneda" type="tipoMoneda" use="required" />
-            <xs:attribute name="gama" type="tipoGama" use="required" />
+            
+            <xs:attribute name="moneda" type="tipoMoneda" use="required"/>
+            <xs:attribute name="gama" type="tipoGama" use="required"/>
         </xs:complexType>
     </xs:element>
-    <xs:element name="info" type="tipoInfo"/>
     
-    <!-- TIPOS DEFINIDOS POR EL USUARIO-->
-    
-    <!-- Patron de caracteres que tiene que tener la MAC-->
+    <!-- TIPOS PREDEFINIDOS -->
     <xs:simpleType name="tipoMAC">
         <xs:restriction base="xs:string">
-            <xs:pattern value="([0-9A-Fa-f]{2}:){4}[0-9A-Fa-f]{2}" />
+            <xs:pattern value="([0-9A-Fa-f]{2}:){5}[0-9A-Fa-f]{2}" />
         </xs:restriction>
     </xs:simpleType>
     
-    <!-- Las 3 opciones que tiene que tener la gama-->
     <xs:simpleType name="tipoGama">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="baja" />
-            <xs:enumeration value="media" />
-            <xs:enumeration value="alta" />
+            <xs:enumeration value="baja"/>
+            <xs:enumeration value="media"/>
+            <xs:enumeration value="alta"/>
         </xs:restriction>
     </xs:simpleType>
     
-    <!-- La moneda tiene que ser EUR-->
     <xs:simpleType name="tipoMoneda">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="EUR" />
+            <xs:enumeration value="EUR"/>
         </xs:restriction>
     </xs:simpleType>
     
-    <!-- La url tiene que tener https-->
     <xs:simpleType name="tipoInfo">
         <xs:restriction base="xs:string">
             <xs:pattern value="https?://.+" />
         </xs:restriction>
     </xs:simpleType>
+    
+    <xs:simpleType name="tipoImg">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="JPEG"/>
+            <xs:enumeration value="JPG"/>
+            <xs:enumeration value="WEBP"/>
+            <xs:enumeration value="PNG"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="tipoImgElement">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="type" type="tipoImg" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    
+    <xs:complexType name="tipoPrecio">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="moneda" type="xs:string" fixed="euro"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
     
 </xs:schema>

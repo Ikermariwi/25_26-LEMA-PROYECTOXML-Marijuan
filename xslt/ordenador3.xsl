@@ -16,7 +16,6 @@
             </head>
             
             <body>
-                
                 <!-- Cabecera-->
                 <header>
                     <h1>Catálogo de Componentes</h1>
@@ -33,6 +32,11 @@
                     </ul>
                 </nav>
                 
+                <p class="total">
+                    Total de productos:
+                    <xsl:value-of select="count($XMLordenador//componentes/*)" />
+                </p>
+                
                 <!-- PROCESADORES -->
                 <section class="categoria">
                     <header><h2>Procesadores</h2></header>
@@ -42,10 +46,6 @@
                             <li class="producto">
                                 <article>
                                     <h3>
-                                        <!-- Añade numeracion automatica -->
-                                        <xsl:number level="any"
-                                            count="procesador | tarjetagrafica | placaBase | memoriaRam | memoriaAlmacenamiento | fuentedeAlimentacion | chasis | refrigerador"
-                                            format="1. " />
 
                                         <!-- Muestra el texto descriptivo -->
                                         <xsl:value-of select="texto"/>

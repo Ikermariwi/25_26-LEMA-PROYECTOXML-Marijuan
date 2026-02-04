@@ -2,7 +2,7 @@
 
 <ordenador xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ordenador.xsd" moneda="EUR" gama="alta">
     
-    <MAC>23:23:23:23:23</MAC>
+    <MAC>00:15:5D:54:B2:F0</MAC>
     
     <componentes>
         
